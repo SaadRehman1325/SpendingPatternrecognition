@@ -1,0 +1,338 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 1512px;
+  height: 196px;
+  left: 0px;
+  top: 0px;
+}
+/*sign in page title*/
+.text-left-right {
+  left: 522px;
+  top: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 28px;
+  text-indent: 525px;
+}
+
+/*home Screen title*/
+.text-left-right2 {
+  left: 522px;
+  top: 18px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 28px;
+  text-indent: 1.5%;
+}
+
+/* navbar other options*/
+.text-left-to-right {
+  font-family: "Inter";
+  font-style: normal;
+  color: white;
+  font-size: 28;
+  text-indent: 30%;
+}
+
+.title1,
+.title2 {
+  left: 522px;
+  top: 18px;
+
+  color: 45C2C5;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 28px;
+  text-indent: 580;
+}
+
+.title2 {
+  text-align: left;
+  text-indent: 4.5%;
+}
+
+.left-text {
+  color: white;
+}
+.byline {
+  color: DA3F97;
+}
+
+.above-text {
+  left: 39.15%;
+  top: 26.78%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+
+  text-align: center;
+  color: #4b5fab;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 30%;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 500px;
+  margin: 10px 400px;
+  display: inline-block;
+  background-color: 586CB3;
+  opacity: 0.4;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 500px;
+}
+::placeholder {
+  font-family: "roboto";
+  color: white;
+}
+
+/*Set a style for all buttons */
+button,
+.loginbtn,
+.addbtn,
+.closebtn {
+  background-color: DA4097;
+  color: white;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16;
+  padding: 14px 20px;
+  margin: 8px 490;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  height: 7%;
+  border-radius: 28px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  align-content: center;
+  align-items: center;
+  width: 100;
+
+  /* navbar buttons */
+}
+.inline button {
+  background-color: white;
+  color: #4b5fab;
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16;
+  width: 8%;
+  margin: 10px;
+  height: 15%;
+  display: inline-block;
+}
+.ocrbtn {
+  padding-block-start: 10%;
+  margin-left: 50px;
+}
+
+/* The "Forgot password" text */
+.psw {
+  margin-left: 290px;
+}
+.cancelbtn {
+  background-color: white;
+  border: 1px solid #4b5fab;
+  color: #4b5fab;
+  width: 20%;
+  align-items: center;
+  margin-left: 460px;
+  place-items: 100px;
+}
+
+h2 {
+  font-family: "roboto";
+  font-size: 18;
+  font-weight: bold;
+  color: #4b5fab;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid#4B5FAB;
+  line-height: 0.1em;
+  width: 500px;
+  margin-left: 325px;
+}
+
+h2 span {
+  color: #4b5fab;
+  background: #fff;
+  padding: 0 10px;
+}
+
+.navbar-brand {
+  padding: 0.1em 0em;
+  margin: -0.3em 0.15em;
+}
+
+/* homepage boxes */
+
+.titlepage h1 {
+  font-family: "Inter";
+  font-weight: 700;
+  color: #4b5fab;
+}
+.Features .Our_box {
+  box-shadow: #ddd 0px 0px 10px 0px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 30px 20px;
+}
+
+.Features .Our_box h4 {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 501;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+img {
+  max-width: 5vw;
+  height: 4vw;
+}
+
+/* Upload btn in OCR */
+
+.Uploadbtn + label {
+  color: white;
+  background-color: DA4097;
+  font-family: "roboto";
+  font-weight: 550;
+  font-size: 16;
+  padding-top: 10px;
+  text-align: center;
+  width: 15%;
+  height: 7%;
+  margin: 8px 490px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.Uploadbtn + label:hover {
+  background-color: Da4097;
+}
+
+.Uploadbtn {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+/* products management page cards */
+.product-card {
+  background-color: white;
+  box-shadow: #ddd 0px 0px 10px 0px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  width: 25vw;
+  height: 11rem;
+  margin: 10px 10px;
+  transition: all 0.3s;
+}
+.product-card:hover {
+  animation: cardanimation 0.3s forwards;
+}
+@media (max-width: 770px) {
+  .product-card {
+    height: 14rem;
+  }
+}
+
+@keyframes cardanimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+/* Add product buttons */
+.closebtn {
+  height: auto;
+  width: auto;
+  background-color: crimson;
+  border-radius: 5px;
+}
+.addbtn {
+  height: auto;
+  width: au to;
+  background-color: 007bff;
+  border-radius: 5px;
+}
+
+.btn-circle.btn-xl {
+  background-color: rgb(219, 91, 219);
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 60px;
+  font-size: 50px;
+  align-content: right;
+}
+
+.plus-class {
+  padding-bottom: 0px;
+}
+
+input[type="title"],
+input[type="category"],
+input[type="quantity"],
+input[type="price"],
+.btn-group {
+  width: 60%;
+  padding-bottom: 50px;
+  color: white;
+  padding: 12px 20px;
+  display: inline-block;
+  background-color: 586CB3;
+  opacity: 0.4;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 500px;
+}
+::placeholder {
+  font-family: "roboto";
+  color: white;
+}
+.product-wrapper h1 {
+  font-size: 40px;
+  font-family: Inter;
+  color: white;
+  text-align: center;
+}
+
+.container1 {
+  text-align: center;
+}

@@ -1,0 +1,328 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    />
+    <title>Products Managemnet</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #4b5fab; height: 25%; width: 100vw"
+    >
+      <ul class="navbar-brand">
+        <br />
+        <li class="navbar-title-1" style="display: inline; margin-left: -0.5%">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: Inter;
+              color: white;
+              font-size: 40px;
+              font-weight: 700;
+            "
+            >Spending</a
+          >
+        </li>
+
+        <li class="navbar-title-2" style="display: inline">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: Inter;
+              color: DA3F97;
+              font-size: 40px;
+              font-weight: 700;
+            "
+            >Pattern</a
+          >
+        </li>
+        <br />
+
+        <li class="navbar-title-3" style="display: flex; margin-left: 18%">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              font-family: Inter;
+              color: 45C2C5;
+              font-size: 40px;
+              font-weight: 700;
+            "
+            >Recognition</a
+          >
+        </li>
+      </ul>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="ocr.html"
+              style="font-family: Inter; font-weight: 600"
+              >OCR <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              style="font-family: Inter; font-weight: 600"
+              >Data Scraping<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              style="font-family: Inter; font-weight: 600"
+              >Forecast</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              style="font-family: Inter; font-weight: 600"
+              >Analytics</a
+            >
+          </li>
+
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="#"
+              style="font-family: Inter; font-weight: 600"
+              >Products</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              style="font-family: Inter; font-weight: 600"
+              >Options</a
+            >
+          </li>
+        </ul>
+        <div>
+          <ul>
+            <li class="nav-item dropdown" style="display: inline">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="display: inline; color: white"
+              >
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+                style="right: 0; left: auto; color: white"
+              >
+                <a class="dropdown-item" href="#">View Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Settings</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="signin.html">Log Out</a>
+              </div>
+            </li>
+
+            <li class="navbar-image" style="display: inline">
+              <img
+                src="static/images/newuser.jpeg"
+                alt="error 404"
+                width="70vw"
+                height="70vw"
+                style="display: inline; border-radius: 50%"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="exampleModalLabel"
+              style="
+                font-family: Inter;
+                font-size: 30px;
+                font-weight: 700;
+                color: 45C2C5;
+              "
+            >
+              Add Product
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form method="post">
+              <div
+                class="container-1"
+                style="display: flex; justify-content: space-around"
+              >
+                <input
+                  id="productTitle"
+                  type="title"
+                  placeholder="Enter Title"
+                  name="P-title"
+                  required
+                />
+              </div>
+
+              <div
+                class="container-2"
+                style="display: flex; justify-content: space-around"
+              >
+                <input
+                  id="productCategory"
+                  type="category"
+                  placeholder="Enter Category"
+                  name="P-category"
+                  required
+                />
+              </div>
+              <div
+                class="container-3"
+                style="display: flex; justify-content: space-around"
+              >
+                <input
+                  id="productQuantity"
+                  type="quantity"
+                  placeholder="Enter Cuantity"
+                  name="P-quantity"
+                  required
+                />
+              </div>
+              <div
+                class="container-4"
+                style="display: flex; justify-content: space-around"
+              >
+                <input
+                  id="productPrice"
+                  type="price"
+                  placeholder="Enter Price"
+                  name="P-price"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div
+            class="modal-footer"
+            style="display: flex; justify-content: space-around"
+          >
+            <button type="button" class="closeBtn" data-dismiss="modal">
+              Close
+            </button>
+            <button
+              id="addBtn"
+              type="button"
+              class="addBtn"
+              data-dismiss="modal"
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="product-page-wrapper"
+      style="
+        background: #4b5eab6c;
+        min-height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      "
+    >
+      <div
+        class="plus-class"
+        style="
+          display: flex;
+          justify-content: end;
+          padding: 20px 10px;
+          padding-bottom: 0px;
+        "
+      >
+        <button
+          type="button"
+          class="btn btn-circle btn-xl"
+          data-toggle="modal"
+          data-target="#exampleModal"
+        >
+          <i>
+            <img
+              src="./static/images/plus.png"
+              data-target="#exampleModal"
+              width="100%"
+          /></i>
+        </button>
+      </div>
+
+      <div
+        id="products"
+        ;
+        class="product-wrapper d-flex flex-wrap"
+        style="width: 80%; margin: auto"
+      ></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </body>
+</html>
