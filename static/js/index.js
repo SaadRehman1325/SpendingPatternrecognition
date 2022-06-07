@@ -2,8 +2,17 @@ function edit(index) {
   let products = localStorage.getItem("product");
   let product = JSON.parse(products).find((pro) => pro._id == index);
   let productId = product._id;
+  let p_title = "bags";
+  let p_category = "assessories";
+  let p_quantity = "100";
+  let p_price = "2000";
+
   let newProduct = {
     _id: productId,
+    name: p_title,
+    collection: p_category,
+    quantity: p_quantity,
+    price: p_price,
   };
 
   products = JSON.parse(products).filter((pro) => pro._id != index);
@@ -55,6 +64,9 @@ addBtn.addEventListener("click", function (e) {
       <a id ="${p_id}" href="#" onclick="deleteproduct(this.id)" class="btn btn-primary">
       Delete
       </a>
+      <a id ="${p_id}" href="#" onclick="" class="btn btn-primary edit">
+      Manage
+      </a>
       </div>`;
   data.classList.add("product-card");
   prodDiv.appendChild(data);
@@ -77,7 +89,7 @@ addBtn.addEventListener("click", function (e) {
 
 function showProducts() {
   let product = localStorage.getItem("product");
-  // console.log(JSON.parse(product));
+
   let prodDiv = document.querySelector(".product-wrapper");
   prodDiv.innerHTML = "";
   if (product == "[]" || product == null) {
@@ -96,6 +108,9 @@ function showProducts() {
         <a id ="${pro._id}" href="#" onclick="deleteproduct(this.id)" class="btn btn-primary">
         Delete
         </a>
+        <a id ="${pro._id}" href="#" onclick="edit(this.id)" class="btn btn-primary">
+      Manage
+      </a>
         </div>`;
       data.classList.add("product-card");
       prodDiv.appendChild(data);
