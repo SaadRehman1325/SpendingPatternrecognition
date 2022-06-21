@@ -154,6 +154,7 @@ button:hover {
 .psw {
   margin-left: 290px;
 }
+
 .cancelbtn {
   background-color: white;
   border: 1px solid #4b5fab;
@@ -322,6 +323,7 @@ input[type="price"],
   box-sizing: border-box;
   border-radius: 500px;
 }
+
 ::placeholder {
   font-family: "roboto";
   color: white;
